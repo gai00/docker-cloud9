@@ -6,7 +6,7 @@ RUN git clone https://github.com/creationix/nvm.git
 RUN git clone https://github.com/ajaxorg/cloud9.git
 RUN echo "echo '. /nvm/nvm.sh' >> /.bashrc && . /.bashrc" | bash -l
 RUN echo '. /.bashrc && nvm install v0.10.22 && npm install -g sm && /nvm/v0.10.22/lib/node_modules/sm/bin/sm install-command' | bash -l
-RUN echo '. /.bashrc && nvm use v0.10.22 && cd /cloud9 && sm install' | bash -l
+RUN echo '. /.bashrc && nvm use v0.10.22 && cd /cloud9 && sm install && make ace && make worker' | bash -l
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 VOLUME /workspace
