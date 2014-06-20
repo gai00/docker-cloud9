@@ -1,4 +1,4 @@
-FROM gai00/cloud9:basic
+FROM gai00/cloud9:latest
 
 # ruby //testing
 RUN git clone git://github.com/sstephenson/rbenv.git /.rbenv/
