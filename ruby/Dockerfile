@@ -17,9 +17,9 @@ RUN npm install -g forever
 RUN cd /cloud9 && sm install && make ace && make worker
 
 # ruby //testing
-RUN git clone git://github.com/sstephenson/rbenv.git
-ENV PATH /rbenv/bin:${PATH}
-RUN cd /rbenv && mkdir plugins && cd plugins && git clone git://github.com/sstephenson/ruby-build.git
+RUN git clone git://github.com/sstephenson/rbenv.git /.rbenv/
+ENV PATH /.rbenv/bin:${PATH}
+RUN cd /.rbenv && mkdir plugins && cd plugins && git clone git://github.com/sstephenson/ruby-build.git
 
 # clean cache
 RUN apt-get autoremove -y
