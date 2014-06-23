@@ -1,6 +1,6 @@
 docker-cloud9
 =============
-From: [https://github.com/gai00/docker-cloud9][1]
+Docker hub: [https://registry.hub.docker.com/u/gai00/cloud9/][1]
 #Usage
 
     docker run -d -v $(pwd):/workspace -p 3131:3131 gai00/cloud9
@@ -57,4 +57,4 @@ cloud9 console:
 
 Remember commit your container after you install ruby and rails, or you will lost these change.
 
-  [1]: https://github.com/gai00/docker-cloud9
+  [1]: https://registry.hub.docker.com/u/gai00/cloud9/
