@@ -9,7 +9,7 @@ RUN git clone https://github.com/creationix/nvm.git
 RUN git clone https://github.com/ajaxorg/cloud9.git
 
 # nvm
-ENV NODE_VERSION v0.10.22
+ENV NODE_VERSION v0.10.29
 RUN echo 'source /nvm/nvm.sh && nvm install ${NODE_VERSION}' | bash -l
 ENV PATH /nvm/${NODE_VERSION}/bin:${PATH}
 RUN npm install -g sm && /nvm/${NODE_VERSION}/lib/node_modules/sm/bin/sm install
